@@ -1,0 +1,18 @@
+<h2>Session#new</h2>
+
+<%= form_tag sessions_path do %>
+	<div>
+		<%= label_tag 'email', 'Email:' %><br>
+		<%= text_field_tag 'email' %>
+	</div>
+	<div>
+		<%= label_tag 'password', 'Password:' %><br>
+		<%= password_field_tag 'password' %>
+	</div>
+	<div>
+		<%= submit_tag 'Login!' %>
+	</div>
+	<div>Dont have an account? 
+		<%= link_to "Register here!", new_user_path %>
+	</div>
+<% end %>
